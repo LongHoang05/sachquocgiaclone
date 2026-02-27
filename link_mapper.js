@@ -48,6 +48,20 @@ htmlFiles.forEach((file) => {
       fileMap[""] = file;
     }
   }
+
+  // Alias checkout routes to the local html files
+  if (virtualPath === "/cart.html") {
+    fileMap["/checkout/cart"] = file;
+  }
+  if (virtualPath === "/checkout-information.html") {
+    fileMap["/checkout/information"] = file;
+  }
+  if (virtualPath === "/checkout-payment.html") {
+    fileMap["/checkout/payment"] = file;
+  }
+  if (virtualPath === "/checkout-shipping.html") {
+    fileMap["/checkout/shipping"] = file;
+  }
 });
 
 // Reporting state
