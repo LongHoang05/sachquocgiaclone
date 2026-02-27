@@ -35,23 +35,25 @@ htmlFiles.forEach((file) => {
     const $ = cheerio.load(htmlContent);
     let modified = false;
 
-    $(".content_item a").each((i, el) => {
-      // Pick a random target file
-      const randomTarget =
-        targetFiles[Math.floor(Math.random() * targetFiles.length)];
+    $(".content_item a, .col-lg-3.col-md-4.mb-4 .position-relative > a").each(
+      (i, el) => {
+        // Pick a random target file
+        const randomTarget =
+          targetFiles[Math.floor(Math.random() * targetFiles.length)];
 
-      // Calculate relative path from current file's directory to the target file
-      const fileDir = path.dirname(file);
-      let relativePath = path
-        .relative(fileDir, randomTarget)
-        .replace(/\\/g, "/");
+        // Calculate relative path from current file's directory to the target file
+        const fileDir = path.dirname(file);
+        let relativePath = path
+          .relative(fileDir, randomTarget)
+          .replace(/\\/g, "/");
 
-      $(el).attr("href", relativePath);
-      $(el).removeAttr("target"); // remove target blank if exist
+        $(el).attr("href", relativePath);
+        $(el).removeAttr("target"); // remove target blank if exist
 
-      modified = true;
-      totalLinksModified++;
-    });
+        modified = true;
+        totalLinksModified++;
+      },
+    );
 
     if (modified) {
       fs.writeFileSync(file, $.html(), "utf8");
