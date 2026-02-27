@@ -4,11 +4,10 @@ const cheerio = require("cheerio");
 
 const projectDir = path.join(__dirname, "clone-project");
 
-// The 3 target files
+// The 2 target files
 const targetFiles = [
   path.join(projectDir, "mien-nam-b14870.html"),
   path.join(projectDir, "nguoi-ban-hoi-an-b14793.html"),
-  path.join(projectDir, "sach-luat-tham-khao-c205.html"),
 ];
 
 // Helper to recursively get all HTML files
