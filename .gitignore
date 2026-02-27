@@ -1,0 +1,15 @@
+# Temporary reports
+patch_report.txt
+patch_report_utf8.txt
+mapper_report.txt
+mapper_report_utf8.txt
+mapper_report_2.txt
+patch.txt
+
+# Audit scripts (Optional, but keeping them for now as per user request context)
+# link_mapper.js
+# qa_auto_fixer.js
+
+# OS files
+Thumbs.db
+.DS_Store

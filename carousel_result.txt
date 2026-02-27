@@ -1,0 +1,11 @@
+OWL CLASSES:
+div.owl-carousel
+img.owl-lazy
+div.book_content-content d-flex typical_slider owl-carousel sach_noi_bat_home
+div.owl-lazy bg-book-search bg-book-category bg-layout
+div.book_content-content d-flex typical_slider owl-carousel book_slide_left
+div.book_content-content d-flex typical_slider owl-carousel book_sl_home
+
+SECTIONS WITH >4 ITEMS:
+div.section section-dt book-hot-home mb-3 | 10 items | "Sách nổi bật"
+div.section section-dt book-good mb-3 | 10 items | "Sách hay"

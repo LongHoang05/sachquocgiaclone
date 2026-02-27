@@ -1,0 +1,181 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"><meta http-equiv="X-UA-Compatible" content="ie=edge"><meta name="robots" content="noindex, nofollow"><link href="assets/images/favicon_4.png" rel="shortcut icon" type="image/x-icon"><title>Người bạn đường du lịch văn hóa Hội An</title><link rel="stylesheet" href="assets/css/style.css"><link rel="stylesheet" href="assets/css/player.css"><link rel="stylesheet" href="assets/css/phoneTemplate.css"><link rel="stylesheet" href="assets/css/template.css"><link rel="stylesheet" href="assets/css/trial-limit-popup.css"><style media="print">*{display:none}</style><script src="assets/js/jquery-1.9.1.min.js"></script><script src="assets/js/language.js"></script><script src="assets/js/config.js"></script><script src="assets/js/config.js"></script><script src="assets/js/trial-limit-checker.js"></script><script>var UrlTracking='';aliasConfig.UIBaseURL='https://reading.sachquocgia.vn/doc-thu/a8cffe0a-61e6-4fe2-8de1-593bde7b4513';bookConfig.OriginPageIndex=1;bookConfig.totalPageCount=20;bookConfig.thumbPath='https://reading.sachquocgia.vn/doc-thu/a8cffe0a-61e6-4fe2-8de1-593bde7b4513/files/thumb/';bookConfig.UIBaseURL='https://reading.sachquocgia.vn/doc-thu/a8cffe0a-61e6-4fe2-8de1-593bde7b4513/mobile/';bookConfig.bookTitle='https://reading.sachquocgia.vn/doc-thu/a8cffe0a-61e6-4fe2-8de1-593bde7b4513';bookConfig.searchPositionJS='https://reading.sachquocgia.vn/doc-thu/a8cffe0a-61e6-4fe2-8de1-593bde7b4513/mobile/javascript/text_position[1].js';bookConfig.searchTextJS='https://reading.sachquocgia.vn/doc-thu/a8cffe0a-61e6-4fe2-8de1-593bde7b4513/mobile/javascript/search_config.js';bookConfig.normalPath='https://reading.sachquocgia.vn/doc-thu/a8cffe0a-61e6-4fe2-8de1-593bde7b4513/files/mobile/';bookConfig.largePath='https://reading.sachquocgia.vn/doc-thu/a8cffe0a-61e6-4fe2-8de1-593bde7b4513/files/mobile/';bookConfig.UrlCurentPage='';bookConfig.appLogoIcon='https://images.sachquocgia.vn/avatar/image-2024073118021621.svg';bookConfig.language='vi';try{for(var i=0;pageEditor!=undefined&&i<pageEditor.length;i++){if(pageEditor[i].length==0){continue;}
+for(var j=0;j<pageEditor[i].length;j++){var anno=pageEditor[i][j];if(anno==undefined)continue;if(anno.overAlpha==undefined){anno.overAlpha=bookConfig.LinkAlpha;}
+if(anno.outAlpha==undefined){anno.outAlpha=0;}
+if(anno.downAlpha==undefined){anno.downAlpha=bookConfig.LinkAlpha;}
+if(anno.overColor==undefined){anno.overColor=bookConfig.LinkDownColor;}
+if(anno.downColor==undefined){anno.downColor=bookConfig.LinkDownColor;}
+if(anno.outColor==undefined){anno.outColor=bookConfig.LinkDownColor;}
+if(anno.annotype=='com.mobiano.flipbook.pageeditor.TAnnoLink'){anno.alpha=bookConfig.LinkAlpha;}}}}catch(e){}
+try{$.browser.device=2;}catch(e){}
+$(document).ready(function(){var isTrialMode=true;if(isTrialMode){TrialLimitChecker.init({isTrialMode:true,maxTrialPages:20,currentPage:1,queryId:14793,nameAscii:'nguoi-ban-duong-du-lich-van-hoa-hoi-an',website:'https://sachquocgia.vn'});}});</script></head><body><style>span.feeship{font-size:0}</style><script src="assets/js/search_config.js"></script><script src="assets/js/bookmark_config.js"></script><script src="assets/js/LoadingJS.js"></script><script src="assets/js/blocker.js"></script>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/owl.carousel.min.js"></script>
+
+<script>
+$(document).ready(function() {
+  // typicalSilder - book carousels
+  function initTypicalSlider(elm, number, auto, margin) {
+    if ($(elm).length === 0) return;
+    var $owl = $(elm).owlCarousel({
+      loop: false,
+      margin: margin,
+      lazyLoad: true,
+      autoplay: auto,
+      autoplayTimeout: 6000,
+      autoplayHoverPause: false,
+      smartSpeed: 300,
+      nav: true,
+      dots: false,
+      autoWidth: false,
+      responsive: {
+        0: { items: 2 },
+        600: { items: 2 },
+        768: { items: 3 },
+        769: { items: 3 },
+        1000: { items: number },
+        1024: { items: number },
+        1200: { items: number }
+      },
+      navText: [
+        '<i class="fas fa-angle-left text-secondary fa-2xl"></i>',
+        '<i class="fas fa-angle-right text-secondary fa-2xl"></i>'
+      ]
+    });
+    $owl.trigger("refresh.owl.carousel");
+  }
+
+  // Init all book carousels
+  initTypicalSlider(".book-carousel-5", 5, true, 0);
+  initTypicalSlider(".sach_noi_bat_home", 6, true, 0);
+  initTypicalSlider(".book_care", 6, false, 15);
+  initTypicalSlider(".book_same_author", 6, false, 15);
+  initTypicalSlider(".book_same_category", 6, false, 15);
+  initTypicalSlider(".book_sl_home", 6, false, 0);
+  initTypicalSlider(".book_sl_home_mb", 6, false, 15);
+  initTypicalSlider(".book_slide_left", 5, false, 15);
+
+  // Home banner slider
+  if ($(".home-slider .owl-carousel").length) {
+    var $owl = $(".home-slider .owl-carousel").owlCarousel({
+      items: 1,
+      responsive: {
+        1024: { item: 1 },
+        991: { items: 1 },
+        768: { items: 1 },
+        320: { items: 1 },
+        0: { items: 1 }
+      },
+      loop: false,
+      rewind: false,
+      autoplay: true,
+      autoplayTimeout: 6000,
+      autoplayHoverPause: true,
+      smartSpeed: 600,
+      mouseDrag: true,
+      nav: true,
+      navText: ['<i class="fas fa-angle-left text-secondary fa-2xl"></i>', '<i class="fas fa-angle-right text-secondary fa-2xl"></i>'],
+      autoWidth: false,
+      margin: 10
+    });
+    $owl.trigger('refresh.owl.carousel');
+  }
+
+  // Home slider mobile
+  if ($(".home-sliderMb_inner .owl-carousel").length) {
+    var $owlMb = $(".home-sliderMb_inner .owl-carousel").owlCarousel({
+      items: 1,
+      loop: false,
+      lazyLoad: true,
+      rewind: false,
+      autoplay: true,
+      autoplayTimeout: 6000,
+      autoplayHoverPause: true,
+      smartSpeed: 500,
+      mouseDrag: true,
+      nav: false,
+      autoWidth: false,
+      margin: 0
+    });
+    $owlMb.trigger('refresh.owl.carousel');
+  }
+
+  // Latest news slider
+  if ($(".latest-news_body-box").length) {
+    $(".latest-news_body-box").owlCarousel({
+      items: 1,
+      loop: false,
+      rewind: false,
+      autoplay: true,
+      autoplayTimeout: 6000,
+      autoplayHoverPause: true,
+      smartSpeed: 300,
+      dots: false,
+      nav: true,
+      navText: ['<i class="fas fa-angle-left text-secondary fa-2xl"></i>', '<i class="fas fa-angle-right text-secondary fa-2xl"></i>'],
+      autoWidth: false,
+      margin: 20
+    });
+  }
+
+  // Collection slider
+  if ($(".collection-slider .owl-carousel").length) {
+    var $owlCol = $(".collection-slider .owl-carousel").owlCarousel({
+      items: 6,
+      responsive: {
+        0: { items: 2 },
+        600: { items: 3 },
+        768: { items: 4 },
+        1024: { items: 5 },
+        1200: { items: 6 }
+      },
+      loop: false,
+      autoplay: true,
+      autoplayTimeout: 6000,
+      smartSpeed: 300,
+      nav: true,
+      dots: false,
+      navText: [
+        '<i class="fas fa-angle-left text-secondary fa-2xl"></i>',
+        '<i class="fas fa-angle-right text-secondary fa-2xl"></i>'
+      ],
+      margin: 15
+    });
+    $owlCol.trigger("refresh.owl.carousel");
+  }
+
+  // Book detail carousel
+  if ($("#BookDetailSection-carousel").length) {
+    var $owlDetail = $("#BookDetailSection-carousel").owlCarousel({
+      responsive: {
+        0: { items: 1, nav: true, mouseDrag: true, touchDrag: true },
+        991: { items: 1, mouseDrag: false, touchDrag: false }
+      },
+      loop: false,
+      autoplay: false,
+      smartSpeed: 300,
+      lazyLoad: true,
+      dots: false,
+      nav: true,
+      margin: 0
+    });
+  }
+
+  // Topic box mobile
+  if ($(".topic-box-mb").length) {
+    $(".topic-box-mb").owlCarousel({
+      items: 3,
+      responsive: {
+        0: { items: 2 },
+        480: { items: 3 },
+        768: { items: 4 }
+      },
+      loop: false,
+      autoplay: false,
+      dots: false,
+      nav: false,
+      margin: 10
+    });
+  }
+});
+</script>
+</body></html>

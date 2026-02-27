@@ -1,0 +1,228 @@
+BẢNG ÁNH XẠ URL - WEBSITE SACHQUOCGIA.VN
+
+Ngày thu thập: 26/02/2026 | Phương pháp: HTTP Request + Sitemap Crawling
+
+
+
+Ghi chú kỹ thuật
+
+Website sachquocgia.vn là Single Page Application (SPA). Các trang tài khoản/đăng nhập/tìm kiếm sử dụng JavaScript client-side routing, do đó không trả về nội dung khi fetch trực tiếp qua HTTP. URLs được thu thập qua: (1) Sitemap XML, (2) Phân tích HTML từ HTTP requests, (3) Phân tích cấu trúc URL patterns.
+
+
+
+STT & Tên trang
+
+URL thực tế
+
+Ghi chú / Hành động
+
+NHÓM 1: TRẢI NGHIỆM MUA SẮM CƠ BẢN
+
+1/ Trang chủ Mobile
+
+https://sachquocgia.vn/
+
+Website responsive - URL giống Desktop. Không có URL riêng cho mobile. Giao diện tự điều chỉnh theo viewport. Trang tải tốt trên thiết bị di động.
+
+2/ Trang chi tiết sách Mobile
+
+https://sachquocgia.vn/mien-nam-trong-trai-tim-ho-chi-minh-b14870.html
+
+Format URL: /ten-sach-bNNNN.html. Ví dụ sách cụ thể. URL giống Desktop, giao diện responsive.
+
+2.1/ Trang chi tiết sách | Nhiều tác giả Mobile
+
+https://sachquocgia.vn/nguoi-ban-duong-du-lich-van-hoa-hoi-an-b14793.html
+
+Sách du lịch Hội An có nhiều tác giả/biên soạn. Format giống trang chi tiết thông thường. Xác nhận từ HTTP request.
+
+2.2/ Trang đọc thử (Preview)
+
+https://sachquocgia.vn/ebook/14793
+
+URL đọc thử dạng /ebook/{book_id}. Lấy được từ nút 'Đọc thử' trên trang chi tiết sách b14793. Cần đăng nhập mới đọc được.
+
+5/ Trang kết quả tìm kiếm Mobile
+
+https://sachquocgia.vn/tim-kiem?keyword=Lịch+sử [SPA]
+
+SPA JavaScript routing. URL pattern phổ biến là /tim-kiem?keyword=... hoặc /?q=... Cần JavaScript để load. Trả 404 khi fetch HTTP trực tiếp.
+
+21/ Các danh mục
+
+https://sachquocgia.vn/tat-ca-danh-muc
+
+Trang liệt kê TẤT CẢ danh mục sách. Xác nhận qua HTTP request (200 OK). Có trong navigation header.
+
+21a/ Tủ sách Bác Hồ
+
+https://sachquocgia.vn/tu-sach-bac-ho-c214
+
+Danh mục con. Xác nhận từ sitemap + HTTP request.
+
+21b/ Tủ sách Nhân vật
+
+https://sachquocgia.vn/tu-sach-nhan-vat-c189
+
+Danh mục con. Xác nhận từ sitemap + navigation.
+
+21c/ Tủ sách Lý luận chính trị
+
+https://sachquocgia.vn/tu-sach-ly-luan-chinh-tri-c191
+
+Danh mục con. Xác nhận từ sitemap + navigation.
+
+21d/ Tủ sách Luật
+
+https://sachquocgia.vn/tu-sach-luat-c202
+
+Danh mục con. Xác nhận từ sitemap + navigation.
+
+21e/ Sách Luật tham khảo
+
+https://sachquocgia.vn/sach-luat-tham-khao-c205
+
+Danh mục con. Xác nhận từ sitemap + navigation.
+
+21f/ Tủ sách Giáo trình và Tài liệu học tập
+
+https://sachquocgia.vn/tu-sach-giao-trinh-va-tai-lieu-hoc-tap-c203
+
+Danh mục con. Xác nhận từ sitemap + navigation.
+
+21g/ Tủ sách Ban Chỉ đạo 35
+
+https://sachquocgia.vn/tu-sach-ban-chi-dao-35-c199
+
+Danh mục con. Xác nhận từ sitemap + navigation.
+
+21h/ Tủ sách Chi bộ
+
+https://sachquocgia.vn/tu-sach-chi-bo-c193
+
+Danh mục con. Xác nhận từ sitemap + navigation.
+
+21i/ Tủ sách Giáo trình lý luận chính trị ĐH
+
+https://sachquocgia.vn/tu-sach-giao-trinh-ly-luan-chinh-tri-danh-cho-bac-dai-hoc-c229
+
+Danh mục con. Xác nhận từ sitemap + navigation.
+
+22/ Sách trong danh mục
+
+https://sachquocgia.vn/tu-sach-bac-ho-c214
+
+Trang listing sách theo danh mục. Ví dụ: Tủ sách Bác Hồ. Format: /ten-danh-muc-cNNN.
+
+NHÓM 2: GIỎ HÀNG VÀ THANH TOÁN
+
+3/ Giỏ hàng (Có sản phẩm)
+
+https://sachquocgia.vn/checkout/cart
+
+Xác nhận 200 OK qua HTTP. Cần thêm sách vào giỏ trước. URL giỏ hàng duy nhất cho cả 2 trạng thái.
+
+3/ Giỏ hàng (Không có sản phẩm)
+
+https://sachquocgia.vn/checkout/cart
+
+URL giống giỏ hàng có sản phẩm. Giao diện hiển thị 'Không có sản phẩm nào trong giỏ hàng'. Xác nhận từ HTTP request.
+
+4.1/ Trang thông tin người dùng 1 (Bước điền thông tin người nhận)
+
+https://sachquocgia.vn/checkout/information [SPA]
+
+SPA flow. Chỉ truy cập được sau khi có sản phẩm trong giỏ và bấm Thanh toán. URL pattern dựa theo chuẩn Shopify-like checkout.
+
+4.1/ Trang thông tin người dùng 2 (Xác nhận thông tin)
+
+https://sachquocgia.vn/checkout/shipping [SPA]
+
+Bước 2 checkout. SPA routing. Truy cập sau khi điền xong bước 1.
+
+4.2/ Phương thức thanh toán
+
+https://sachquocgia.vn/checkout/payment [SPA]
+
+SPA routing. Bước chọn phương thức thanh toán (VNPAY, COD...).
+
+4.2/ Xác nhận đơn hàng
+
+https://sachquocgia.vn/checkout/review [SPA]
+
+SPA routing. Trang xác nhận trước khi đặt hàng.
+
+4.3/ Trang thanh toán thành công / Cảm ơn
+
+https://sachquocgia.vn/checkout/thank-you/{order_id} [SPA]
+
+URL pattern dự đoán. Có thể dạng /checkout/success hoặc /don-hang/cam-on. Cần hoàn tất thanh toán để xác nhận.
+
+4.1/ Thanh toán Desktop - Overlay Popup
+
+KHÔNG PHẢI URL ĐỘC LẬP - LÀ MODAL/OVERLay
+
+Popup overlay được kích hoạt bằng JavaScript khi click nút 'Mua ngay' hoặc 'Thêm vào giỏ'. CSS Selector gợi ý: .modal-checkout, #checkout-overlay, [data-modal='payment']. Không có URL riêng.
+
+NHÓM 3: TÀI KHOẢN VÀ CÁ NHÂN HÓA
+
+10/ Đăng nhập
+
+https://sachquocgia.vn/dang-nhap [SPA]
+
+SPA JavaScript routing. URL pattern phổ biến. Thực tế có thể là /login hoặc /account/login. Cần JavaScript để render. Trả 404 khi fetch HTTP.
+
+11/ Đăng ký
+
+https://sachquocgia.vn/dang-ky [SPA]
+
+SPA JavaScript routing. Tương tự trang đăng nhập. Có thể là /register hoặc /account/register.
+
+12/ Tài khoản của bạn (Dashboard)
+
+https://sachquocgia.vn/tai-khoan [SPA]
+
+SPA routing. Cần đăng nhập. Dashboard cá nhân sau khi login.
+
+13/ Sách của bạn (Kho sách đã mua)
+
+https://sachquocgia.vn/tai-khoan/sach-cua-ban [SPA]
+
+SPA routing. Trang quản lý sách đã mua/sở hữu.
+
+14/ Ebook đang đọc
+
+https://sachquocgia.vn/tai-khoan/sach-dang-doc [SPA]
+
+SPA routing. Trang hiển thị sách đang đọc dở.
+
+16/ Thông tin tài khoản (Chỉnh sửa hồ sơ)
+
+https://sachquocgia.vn/tai-khoan/thong-tin [SPA]
+
+SPA routing. Trang chỉnh sửa thông tin cá nhân.
+
+17/ Lịch sử mua hàng Mobile
+
+https://sachquocgia.vn/tai-khoan/lich-su-mua-hang [SPA]
+
+SPA routing. Trang lịch sử đơn hàng.
+
+17.1/ Lịch sử mua hàng - Chi tiết đơn hàng
+
+https://sachquocgia.vn/tai-khoan/lich-su-mua-hang/{order_id} [SPA]
+
+SPA routing. Trang chi tiết từng đơn hàng.
+
+
+
+
+
+Chú thích
+
+[SPA] = Single Page Application routing - URL chỉ hoạt động khi mở trên trình duyệt có JavaScript. Không thể fetch trực tiếp bằng HTTP.
+
+[Xác nhận] = URL trả về HTTP 200 OK khi fetch trực tiếp.
+
+Phương pháp thu thập: (1) Đọc Sitemap XML tại /sitemap.xml, (2) Phân tích HTML từ HTTP requests, (3) Phân tích URL patterns từ navigation/footer/links.
+
