@@ -16,9 +16,8 @@ const path = require("path");
 const { URL } = require("url");
 
 // ─── SESSION CONFIGURATION ─────────────────────────────────────────────────
-// 📌 ĐIỀN COOKIE CỦA BẠN VÀO ĐÂY (lấy từ Browser DevTools sau khi đăng nhập)
 const SESSION_COOKIE =
-  "auth=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRoIjoiMzNmZTNiNTVkMDAzNGFjZThhMDkwYTNjYjFjNTUxMjkiLCJpcCI6IjEyMy4xNi4yMzQuMTA3IiwidGltZSI6IjI2MDIyNzEwMjA0MyIsIm5iZiI6MTc3MjE2MjQ0MywiZXhwIjoxNzcyNzY3MjQzLCJpYXQiOjE3NzIxNjI0NDN9.4veLnOilvWslfYGhpwpgp3gQVQxhyIOFA3A9nZBab8Q"; // Updated 27/02/2026 - expires 05/03/2026
+  "_ga=GA1.1.2103779469.1770007540; comment=%7B%22BookId%22%3A%22e696e9ff-d52d-4f70-8842-ee915b8d862a%22%2C%22Url%22%3Anull%2C%22Messenger%22%3A%22jbh%22%7D; auth=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRoIjoiMzNmZTNiNTVkMDAzNGFjZThhMDkwYTNjYjFjNTUxMjkiLCJpcCI6IjQyLjExNi4xNDguMTQ2IiwidGltZSI6IjI2MDIyNzE0NTgzMiIsIm5iZiI6MTc3MjE3OTExMiwiZXhwIjoxNzcyNzgzOTEyLCJpYXQiOjE3NzIxNzkxMTJ9.FjzeKL0UvzhgAtDZXIcuRcOgqjARy80h2o8oiWez_xA; cart=1; _ga_Q7P1WCDED9=GS2.1.s1772174891$o12$g1$t1772181105$j60$l0$h0";
 
 // Headers mặc định giả lập trình duyệt Chrome thật
 const DEFAULT_HEADERS = {

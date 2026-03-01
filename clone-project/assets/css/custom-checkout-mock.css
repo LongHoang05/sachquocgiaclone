@@ -1,0 +1,13 @@
+.cart-item-info .item-details {
+  max-width: 60%;
+}
+.cart-item-action {
+  margin-left: auto;
+  padding-right: 15px;
+}
+.btn-delete-static {
+  cursor: pointer;
+}
+.btn-delete-static i {
+  color: #dc3545;
+}
