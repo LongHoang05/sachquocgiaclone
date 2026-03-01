@@ -1317,8 +1317,8 @@ const owl = {
             dots: false,
             nav: true,
             navText: [
-                '<img src="/Content/assets/icons/icon-angle-left-gray-light.svg" alt="" />',
-                '<img src="/Content/assets/icons/icon-angle-right-gray-light.svg" alt="" />',
+                '<img src="assets/icons/icon-angle-left-gray-light.svg" alt="" />',
+                '<img src="assets/icons/icon-angle-right-gray-light.svg" alt="" />',
             ],
             margin: 0,
         });
@@ -1914,7 +1914,7 @@ const pdf = {
     },
     config: function () {
         const pdfViews = document.querySelectorAll(".pdf-view-file");
-        // pdfjsLib.GlobalWorkerOptions.workerSrc = '/Content/assets/js/pdf.worker.min.js';
+        // pdfjsLib.GlobalWorkerOptions.workerSrc = 'assets/js/pdf.worker.min.js';
 
         pdfViews.forEach((item) => {
             let numPages = 0;
