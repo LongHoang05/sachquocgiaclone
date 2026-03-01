@@ -571,8 +571,8 @@ ul.submenu_list {
   padding: 10px 12px 24px;
   background: #27ae34;
   border-radius: 5px;
-  .row{
-	  margin: 0;
+  .row {
+    margin: 0;
   }
 }
 
@@ -581,7 +581,9 @@ body {
 }
 
 .module-heading-white {
-  font-feature-settings: "clig" off, "liga" off;
+  font-feature-settings:
+    "clig" off,
+    "liga" off;
   font-family: Roboto;
   font-size: 16px;
   font-style: normal;
@@ -592,7 +594,9 @@ body {
 }
 
 .module-heading-light {
-  font-feature-settings: "clig" off, "liga" off;
+  font-feature-settings:
+    "clig" off,
+    "liga" off;
   font-family: Roboto;
   font-size: 18px;
   font-style: normal;
@@ -803,6 +807,21 @@ img.cover-thumb {
   min-width: 330px;
   position: absolute;
   left: -250px;
+  display: none;
+}
+
+.menu_component .menu_category.active .dropdown-menu,
+.menu_component .menu_category:hover .dropdown-menu {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  z-index: 9999 !important;
+}
+
+/* Fix payment method active state losing border on hover */
+.section-checkout_left .payment-group .paymentMethod:hover .method.active,
+#checkout-mb-info .payment-group .paymentMethod:hover .method.active {
+  border: 1px solid #d4b26b !important;
 }
 
 .menu_component .menu_category .dropdown-menu .popover {
@@ -1486,4 +1505,9 @@ form#frmMobileBook {
   vertical-align: middle;
   margin-right: 15px;
   float: none;
+}
+
+.dropdown-menu li a:hover {
+  color: #27ae34 !important;
+  border-color: #27ae34 !important;
 }
