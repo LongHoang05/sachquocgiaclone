@@ -1,16 +1,16 @@
 :root {
-  --Primarybg: #27ae35;
+  --Primarybg: #0069ad;
   --container-width: 1280px;
   --Banner-height: 444px;
   --Menu-items-count: 9;
-  --Page-bg: #d4e9d3;
+  --Page-bg: #ebf4fa;
 }
 
 body {
   background: #d4e9d3;
 }
 .info-list .item-link i {
-  color: #27ae34;
+  color: var(--Primarybg);
 }
 .header-right .header-icon:not(.header_button) i,
 .header-icon .my-account,
@@ -316,7 +316,7 @@ ul.submenu_list {
   color: #4da1ee;
 }
 .footer-copyright {
-  background-color: #27ae34;
+  background-color: #004a84;
 }
 .menu_component .menu_category .category_show_all {
   color: #27ae34;
@@ -373,7 +373,7 @@ ul.submenu_list {
   color: #fff;
 }
 .filter_menu-box .box-price_form {
-  background: #27ae34;
+  background: var(--Primarybg);
 }
 .menu_component .menu_category {
   background: #f9e45e;
@@ -398,13 +398,13 @@ ul.submenu_list {
   background-color: #27ae34;
 }
 .change_password-content .form-group button {
-  background: #27ae34;
+  background: var(--Primarybg);
 }
 .sidebar .sidebar_user .user_photo {
   border: 2px solid #27ae34;
 }
 .topic-headding .topic-box .box_item {
-  background-color: #27ae34;
+  background-color: var(--Primarybg);
 }
 .collection-book .collection-slider .item-content_price span {
   color: #27ae34;
@@ -417,71 +417,71 @@ ul.submenu_list {
   background: #27ae34;
 }
 .comment-box .comment_title::before {
-  background: #27ae34;
+  background: var(--Primarybg);
 }
 .component_pagination ul li a {
-  color: #27ae34;
+  color: var(--Primarybg);
 }
 .component_pagination ul li.active {
-  background-color: #27ae34;
+  background-color: var(--Primarybg);
 }
 .component_pagination ul li:hover {
-  background-color: #27ae34;
+  background-color: var(--Primarybg);
 }
 .component_pagination ul .pagination_list-btn a svg:hover rect {
-  fill: #27ae34;
+  fill: var(--Primarybg);
 }
 .footer .footer_content .list-sty .content-list_item a:hover {
-  color: #27ae34;
+  color: var(--Primarybg);
 }
 .footer .footer_info .footer_content-list .content-list_item:hover {
-  color: #27ae34;
+  color: var(--Primarybg);
 }
 .detail .contentBook .nav-tabs .nav-item .nav-link.active {
-  border-bottom: 5px solid #27ae34 !important;
+  border-bottom: 5px solid var(--Primarybg) !important;
 }
 .menu_component-mobile {
   background: #ffffff;
 }
 .section_header-mobile .header_wrap .header_button {
-  color: #27ae34;
-  border: 1px solid #27ae34;
+  color: var(--Primarybg);
+  border: 1px solid var(--Primarybg);
   background: #fff;
 }
 .section_header-mobile .header_wrap .header_button svg path {
   transition: 0.3s ease;
-  fill: #27ae34;
+  fill: var(--Primarybg);
 }
 .section_header-mobile .header_wrap .header_button svg path {
-  fill: #27ae34;
+  fill: var(--Primarybg);
 }
 .topview-content .position-relative.active::before {
-  background: #27ae34;
+  background: var(--Primarybg);
 }
 .checkout_mb .group_item .icon-item svg path {
   fill: #e1afb1;
 }
 .checkout_mb .icon-item.active svg path {
-  fill: #27ae34;
+  fill: var(--Primarybg);
 }
 .checkout_mb .group_item .icon-item {
   border: 1px solid #e1afb1;
-  color: #27ae34;
+  color: var(--Primarybg);
 }
 .my-account-mb-main_dashboard .dashboard_box-img {
-  background: #27ae34;
+  background: var(--Primarybg);
 }
 .login_mb .login_mb-btn button.mb_btn-btn {
-  background-color: #27ae34;
+  background-color: var(--Primarybg);
 }
 .login_mb .login_mb-title a {
-  color: #27ae34;
+  color: var(--Primarybg);
 }
 .resgiter_mb .login_mb-btn button.mb_btn-btn {
-  background-color: #27ae34;
+  background-color: var(--Primarybg);
 }
 .resgiter_mb .resgiter_mb-title a {
-  color: #27ae34;
+  color: var(--Primarybg);
 }
 .brcrumb_info-title {
   color: #333;
@@ -490,14 +490,14 @@ ul.submenu_list {
   color: #333;
 }
 .author_section .author_wrap .author_heading-line {
-  background: #27ae34;
+  background: var(--Primarybg);
 }
 .home-slider .owl-dots button.owl-dot.active {
   background-color: #e1afb1;
 }
 
 .section_header-mobile .header_wrap .header_button:hover {
-  background: #27ae34;
+  background: var(--Primarybg);
 }
 .my-account-mb-main_user .sidebar_user-avatar .user_photo {
   border: 2px solid #e1afb1;
@@ -522,9 +522,9 @@ ul.submenu_list {
   font-weight: bold;
 }
 .author-list_more-list {
-  background: #27ae341a !important;
-  border: 1px solid #27ae3430 !important;
-  color: #27ae34 !important;
+  background: var(--Page-bg) !important;
+  border: 1px solid var(--Primarybg) !important;
+  color: var(--Primarybg) !important;
   border-radius: 20px !important;
   padding: 5px 10px !important;
 }
@@ -569,7 +569,7 @@ ul.submenu_list {
 
 .green-card {
   padding: 10px 12px 24px;
-  background: #27ae34;
+  background: linear-gradient(0deg, #1f5ea9 0%, #66b6ff 100%);
   border-radius: 5px;
   .row {
     margin: 0;
@@ -584,10 +584,10 @@ body {
   font-feature-settings:
     "clig" off,
     "liga" off;
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-size: 16px;
   font-style: normal;
-  font-weight: 800;
+  font-weight: 700;
   line-height: 150%;
   text-transform: uppercase;
   color: #ffffff;
@@ -597,7 +597,7 @@ body {
   font-feature-settings:
     "clig" off,
     "liga" off;
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 800;
@@ -623,7 +623,7 @@ body {
 }
 
 .green-card .category-title {
-  font-size: 14px;
+  display: none;
 }
 
 .green-card .see-all-link svg path {
@@ -796,7 +796,7 @@ img.cover-thumb {
 .header-icon .active,
 .header-icon:hover,
 .menu_category.menu_category-index.st:hover {
-  background: rgba(70, 216, 102, 0.77);
+  background: rgba(29, 197, 223, 0.647);
 }
 
 .menu_component .menu_category .dropdown-menu {
@@ -974,7 +974,7 @@ img.cover-thumb {
 .menu_component .menu_category .category_show_all {
   font-size: 14px;
   font-weight: 700;
-  color: #27ae34;
+  color: var(--Primarybg);
   display: block;
   padding: 0;
 }
@@ -1362,7 +1362,7 @@ div.book_content-title.border_bottom > h3 {
 }
 
 .section_header-mobile {
-  background: #27ae34;
+  background: var(--Primarybg);
 }
 
 .home_section_sp.home_slider {
@@ -1423,7 +1423,7 @@ form#frmMobileBook {
   background: #27ae34 !important;
 }
 .home_page .banner_section {
-  background: #27ae3454;
+  background: #ebf4fa;
 }
 .termsofuse_details img {
   width: 100%;
@@ -1508,6 +1508,24 @@ form#frmMobileBook {
 }
 
 .dropdown-menu li a:hover {
-  color: #27ae34 !important;
-  border-color: #27ae34 !important;
+  color: var(--Primarybg) !important;
+  border-color: var(--Primarybg) !important;
+}
+
+.section-dt.book_content.reading-pack.bg-white.boder-5px.px-md-4.px-3.mb-3 {
+  background: linear-gradient(180deg, #fff 0%, #bfdbff 100%);
+}
+
+#btn_comment {
+  color: #fff !important;
+  background: var(--Primarybg);
+}
+
+#btn_comment:hover {
+  color: #fff !important;
+  background: #198ad6;
+}
+
+.sidebar .sidebar_dashboard .nav .nav-item .nav-link:hover {
+  color: var(--Primarybg);
 }

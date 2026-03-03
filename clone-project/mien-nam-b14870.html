@@ -2154,7 +2154,7 @@
         function initTypicalSlider(elm, number, auto, margin) {
           if ($(elm).length === 0) return;
           var $owl = $(elm).owlCarousel({
-            loop: false,
+            loop: true,
             margin: margin,
             lazyLoad: true,
             autoplay: auto,
@@ -2202,7 +2202,7 @@
               320: { items: 1 },
               0: { items: 1 },
             },
-            loop: false,
+            loop: true,
             rewind: false,
             autoplay: true,
             autoplayTimeout: 6000,
@@ -2224,7 +2224,7 @@
         if ($(".home-sliderMb_inner .owl-carousel").length) {
           var $owlMb = $(".home-sliderMb_inner .owl-carousel").owlCarousel({
             items: 1,
-            loop: false,
+            loop: true,
             lazyLoad: true,
             rewind: false,
             autoplay: true,
@@ -2243,7 +2243,7 @@
         if ($(".latest-news_body-box").length) {
           $(".latest-news_body-box").owlCarousel({
             items: 1,
-            loop: false,
+            loop: true,
             rewind: false,
             autoplay: true,
             autoplayTimeout: 6000,
@@ -2271,7 +2271,7 @@
               1024: { items: 5 },
               1200: { items: 6 },
             },
-            loop: false,
+            loop: true,
             autoplay: true,
             autoplayTimeout: 6000,
             smartSpeed: 300,
@@ -2293,7 +2293,7 @@
               0: { items: 1, nav: true, mouseDrag: true, touchDrag: true },
               991: { items: 1, mouseDrag: false, touchDrag: false },
             },
-            loop: false,
+            loop: true,
             autoplay: false,
             smartSpeed: 300,
             lazyLoad: true,
@@ -2312,7 +2312,7 @@
               480: { items: 3 },
               768: { items: 4 },
             },
-            loop: false,
+            loop: true,
             autoplay: false,
             dots: false,
             nav: false,
